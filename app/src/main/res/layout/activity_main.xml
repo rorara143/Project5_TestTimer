@@ -15,4 +15,22 @@
         android:text="@string/hello_world"
         android:textSize="20sp" />
 
+    <Button
+        android:text="@string/buttonstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:id="@+id/startbutton"
+        android:layout_below="@+id/messageTextView"
+        android:layout_alignRight="@+id/messageTextView"
+        android:layout_alignEnd="@+id/messageTextView" />
+
+    <Button
+        android:text="@string/buttonstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/startbutton"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/stopbutton" />
+
 </RelativeLayout>
