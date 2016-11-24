@@ -29,8 +29,12 @@
         android:text="@string/buttonstop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/startbutton"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/stopbutton" />
+        android:id="@+id/stopbutton"
+        android:layout_alignBaseline="@+id/startbutton"
+        android:layout_alignBottom="@+id/startbutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="96dp"
+        android:layout_marginEnd="96dp" />
 
 </RelativeLayout>
