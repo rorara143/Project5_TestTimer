@@ -21,7 +21,6 @@ public class MainActivity extends Activity implements OnClickListener{
     private TextView messageTextView;
     private Button startbutton;
     private Button stopbutton;
-    private Timer restart;
     private Timer stopTimer;
 
 
@@ -114,7 +113,7 @@ switch (view.getId()) {
         startTimer();
         break;
     case R.id.stopbutton:
-        restart.cancel();
+        stopTimer.cancel();
         break;
 }
     }
