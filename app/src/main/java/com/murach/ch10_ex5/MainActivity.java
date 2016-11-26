@@ -22,6 +22,7 @@ public class MainActivity extends Activity implements OnClickListener{
     private Button startbutton;
     private Button stopbutton;
     private Timer restart;
+    private Timer stopTimer;
 
 
 
@@ -92,7 +93,7 @@ public class MainActivity extends Activity implements OnClickListener{
 
             @Override
             public void run() {
-                messageTextView.setText("Seconds: " + elapsedSeconds / 10);
+                messageTextView.setText("File downloaded " + elapsedSeconds / 10 + "time(s)");
             }
         });
     }

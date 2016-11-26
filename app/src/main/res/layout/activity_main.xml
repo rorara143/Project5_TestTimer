@@ -12,29 +12,32 @@
         android:layout_alignParentTop="true"
         android:layout_marginLeft="17dp"
         android:layout_marginTop="14dp"
-        android:text="@string/hello_world"
+        android:text="@string/timer_thread"
         android:textSize="20sp" />
 
     <Button
         android:text="@string/buttonstart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="62dp"
         android:id="@+id/startbutton"
+        android:layout_marginTop="47dp"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
         android:layout_below="@+id/messageTextView"
-        android:layout_alignRight="@+id/messageTextView"
-        android:layout_alignEnd="@+id/messageTextView" />
+        android:layout_alignLeft="@+id/messageTextView"
+        android:layout_alignStart="@+id/messageTextView" />
 
     <Button
         android:text="@string/buttonstop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/stopbutton"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic"
         android:layout_alignBaseline="@+id/startbutton"
         android:layout_alignBottom="@+id/startbutton"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="96dp"
-        android:layout_marginEnd="96dp" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
