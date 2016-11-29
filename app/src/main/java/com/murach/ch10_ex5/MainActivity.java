@@ -18,10 +18,11 @@ import java.util.TimerTask;
 
 public class MainActivity extends Activity implements OnClickListener{
 
+    // data field
     private TextView messageTextView;
     private Button startbutton;
     private Button stopbutton;
-    private Timer stopTimer;
+    private Timer stopTimer;//cancel timer
 
 
 
@@ -92,7 +93,7 @@ public class MainActivity extends Activity implements OnClickListener{
 
             @Override
             public void run() {
-                messageTextView.setText("File downloaded " + elapsedSeconds / 10 + "time(s)");
+                messageTextView.setText("File downloaded " + elapsedSeconds / 10 + " time(s)");
             }
         });
     }
@@ -100,6 +101,7 @@ public class MainActivity extends Activity implements OnClickListener{
     @Override
     //cancels the timer when the app is paused.
     protected void onPause() {
+
         super.onPause();
     }
 
